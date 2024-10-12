@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -36,7 +37,13 @@ const Footer = () => {
             Specialized Timber Products<br />
             Kaasi Industrial Area,<br />
             Kumasi Ghana<br />
-         
+            <a 
+              href="https://www.google.com/maps?q=Kaasi+Industrial+Area,+Kumasi,+Ghana" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-gray-400 text-gray-200 transition-colors  duration-200"
+            ><p className='mt-2'><FaMapMarkerAlt className="inline-block m-2 " />
+             Click to find us</p></a>
           </p>
         </div>
       </div>
