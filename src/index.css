@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .bg-beige {
+    background-color: #F5F5DC; /* Beige color */
+  }
+  .text-dark-green {
+    color: #3D5B35; /* Dark green color */
+  }
+}
