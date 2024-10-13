@@ -20,11 +20,14 @@ const SteamTreatingSection = () => {
             Our Revolutionary Steaming Process
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6">
-            Learn how our exclusive steaming technology transforms Lesser Used Species into beautiful, sustainable alternatives to primary woods.
-          </p>
+          Learn how our exclusive steaming technology that we have refined over the past 3 decades transforms
+          Lesser Used Species into beautiful, sustainable alternatives to primary woods.  </p>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6">
-            By using our advanced steam-treating equipment, we’re able to enhance the color and texture of the wood, making it closely resemble the prized primary species, while reducing environmental impact.
-          </p>
+          By using our advanced steam-treating equipment, we’re able to enhance the color of the wood
+          throughout making it closely resemble the prized primary species.  </p>
+          <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6">
+          Our steam treatment & kiln drying processes utilize green technologies to reduce our environmental
+impact.  </p>
 
           {/* Optional Infographic or Process Visual */}
           {/* You can add another image here if needed */}

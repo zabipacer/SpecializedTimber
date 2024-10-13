@@ -17,8 +17,9 @@ const HeroSection = () => {
           <span className="text-3xl sm:text-4xl md:text-5xl">One Species at a Time.</span> {/* Responsive font sizes */}
         </h1>
         <p className="mt-3 sm:mt-4 text-lg sm:text-lg md:text-xl font-light text-center max-w-xs sm:max-w-md md:max-w-lg font-open-sans">
-          Discover the beauty and sustainability of Lesser Used Species, steam-treated to resemble prized primary species without harming our rainforests.
-        </p>
+        Discover the beauty and utility of Lesser Used Species(LUS), steam-treated to provide sustainable
+alternatives to endangered primary species and which can be responsibly harvested to preserve our rain
+forests.  </p>
       <Link to='/contact'>  <a 
           href="#about-us" 
           className="mt-5 sm:mt-6 inline-block bg-[#8B0000] hover:bg-red-500 text-white font-semibold py-2 px-5 sm:px-6 rounded shadow-lg transition duration-300 ease-in-out"

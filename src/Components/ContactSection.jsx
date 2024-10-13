@@ -9,6 +9,15 @@ const ContactSection = () => {
         <h2 className="text-3xl font-bold text-[#8B0000] mb-6">Contact Us Online</h2>
         <form>
           {/* Your Name */}
+          <div className="flex items-center justify-center">
+        <img src={logo} alt="Company Logo" className="w-3/4 h-auto lg:w-full object-contain" />
+      </div>
+      
+      {/* Middle: Contact Form */}
+      <div className="lg:col-span-2 bg-white p-8 shadow-lg rounded-lg">
+        <h2 className="text-3xl font-bold text-[#8B0000] mb-6">Contact Us Online</h2>
+        <form>
+          {/* Your Name */}
           <div className="mb-4">
             <label className="block text-sm font-semibold text-gray-700 mb-2" htmlFor="name">
               Your Name*

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa'; // Import the icons
+import { FaFacebookF, FaTwitter, FaInstagram, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 
 const ContactUs = () => {
   return (
@@ -17,41 +17,53 @@ const ContactUs = () => {
 
       {/* Contact Form Section */}
       <section className="py-12 px-6 md:px-16">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">Get in Touch</h2>
-          <form action='https://formsubmit.co/zuhaib.zul@gmail.com' method='POST' className="bg-white shadow-lg rounded-lg p-8">
-            <div className="grid grid-cols-1 gap-6">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-                required
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-                required
-              />
-              <input
-                type="text"
-                placeholder="Subject"
-                className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-                required
-              />
-              <textarea
-                placeholder="Your Message"
-                className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 h-32"
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded mt-6 transition duration-300 block mx-auto"
-            >
-              Send Message
-            </button>
-          </form>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Left Side (Logo) */}
+          <div className="flex items-center justify-center">
+            <img
+              src="/STP_Ghana.jpg" // Replace with the correct path to your logo
+              alt="Company Logo"
+              className="w-96  md:w-64"
+            />
+          </div>
+
+          {/* Right Side (Form) */}
+          <div>
+            <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">Get in Touch</h2>
+            <form action='https://formsubmit.co/zuhaib.zul@gmail.com' method='POST' className="bg-white shadow-lg rounded-lg p-8">
+              <div className="grid grid-cols-1 gap-6">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  required
+                />
+                <textarea
+                  placeholder="Your Message"
+                  className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 h-32"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded mt-6 transition duration-300 block mx-auto"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -69,28 +81,27 @@ const ContactUs = () => {
           </p>
           <p className="text-lg text-gray-700">
             <FaEnvelope className="inline-block mr-2" />
-            Email: Chafic@specializedtimber.com
+            Email: info@specializedtimber.com
           </p>
         </div>
       </section>
 
       {/* Map Section (Optional) */}
       <section className="py-12">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6 text-center">Find Us Here</h2>
-          <div className="h-64">
-            <iframe
-            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.9371069654947!2d-1.5989010846795672!3d6.701438495142491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102e3ab4e5968fdf%3A0x9bc66e9f4b5e8f32!2sKaasi%20Industrial%20Area%2C%20Kumasi%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1633667650980!5m2!1sen!2sgh
-'
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-4xl font-bold text-gray-800 mb-6 text-center">Find Us Here</h2>
+    <div className="h-64">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31796.973793485584!2d-1.6120368!3d6.6450163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb91435f818c03%3A0x9bd9e83a3778c608!2sSpecialized%20Timber%20Products%20Ltd!5e0!3m2!1sen!2sgh!4v1633658952098!5m2!1sen!2sgh"
+            width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</section>
     </div>
   );
 };

@@ -29,11 +29,11 @@ const SpeciesShowcase = () => {
   return (
     <div className="p-10 md:p-20 bg-light-gray">
       <h2 className="text-4xl font-bold text-center mb-6 text-dark-green">
-        Explore Our Steam-Treated Woods
+      Explore Our Selection of LUS Wood 
       </h2>
       <p className="text-lg text-center mb-10 text-dark-green">
-        Discover the unique properties and advantages of our steam-treated Lesser Used Species.
-      </p>
+      Discover the unique properties and advantages of our steam-treated as well as our un-steamed Lesser
+      Used Species. </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {speciesData ? (
           speciesData.map((species) => (

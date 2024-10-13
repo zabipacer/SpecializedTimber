@@ -15,11 +15,16 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Left: Logo */}
         <div className="flex items-center">
-          <Link to="/">
-            <img src={logo} alt="Company Logo" className="h-12 w-auto" />
-          </Link>
-          <span className="ml-2 text-2xl font-semibold text-[#8B0000]">STP</span>
-        </div>
+      <Link to="/">
+        <img src={logo} alt="Company Logo" className="h-12 w-auto" />
+      </Link>
+
+      {/* Company Name and D-U-N-S Number */}
+      <div className="ml-2 ">
+        <span className="text-xl font-semibold text-[#8B0000] block">SPECIALIZED TIMBER PRODUCTS LTD. (Est. 1986)</span>
+        <span className="text-sm font-semibold text-[#8B0000] block">D-U-N-S: 64-464-8230</span>
+      </div>
+    </div>
 
         {/* Right: Hamburger Menu Icon for Mobile */}
         <div className="md:hidden">
