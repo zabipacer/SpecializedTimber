@@ -1,15 +1,12 @@
 import React from 'react';
+import logo from './path_to_logo'; // Ensure to import the logo
 
 const ContactSection = () => {
   return (
-    <div className="container mx-auto py-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div className="container mx-auto py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
       
-      {/* Left: Contact Form */}
-      <div className="bg-white p-8 shadow-lg rounded-lg">
-        <h2 className="text-3xl font-bold text-[#8B0000] mb-6">Contact Us Online</h2>
-        <form>
-          {/* Your Name */}
-          <div className="flex items-center justify-center">
+      {/* Left: Logo */}
+      <div className="flex items-center justify-center">
         <img src={logo} alt="Company Logo" className="w-3/4 h-auto lg:w-full object-contain" />
       </div>
       

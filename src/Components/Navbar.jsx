@@ -15,16 +15,16 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Left: Logo */}
         <div className="flex items-center">
-      <Link to="/">
-        <img src={logo} alt="Company Logo" className="h-12 w-auto" />
-      </Link>
+          <Link to="/">
+            <img src={logo} alt="Company Logo" className="h-12 w-auto" />
+          </Link>
 
-      {/* Company Name and D-U-N-S Number */}
-      <div className="ml-2 ">
-        <span className="text-xl font-semibold text-[#8B0000] block">SPECIALIZED TIMBER PRODUCTS LTD. (Est. 1986)</span>
-        <span className="text-sm font-semibold text-[#8B0000] block">D-U-N-S: 64-464-8230</span>
-      </div>
-    </div>
+          {/* Company Name and D-U-N-S Number */}
+          <div className="ml-2">
+            <span className="text-xl font-semibold text-[#8B0000] block">SPECIALIZED TIMBER PRODUCTS LTD. (Est. 1986)</span>
+            <span className="text-sm font-semibold text-[#8B0000] block">D-U-N-S: 64-464-8230</span>
+          </div>
+        </div>
 
         {/* Right: Hamburger Menu Icon for Mobile */}
         <div className="md:hidden">
@@ -43,6 +43,9 @@ const Navbar = () => {
           </Link>
           <Link to="/#about-us" className="text-[#8B0000] font-medium hover:text-red-600 transition duration-200">
             About Us
+          </Link>
+          <Link to="/#products" className="text-[#8B0000] font-medium hover:text-red-600 transition duration-200"> {/* New Products Link */}
+            Our Products
           </Link>
           <Link to="/#contact" className="text-[#8B0000] font-medium hover:text-red-600 transition duration-200">
             Contact Us
@@ -65,6 +68,9 @@ const Navbar = () => {
               </Link>
               <Link to="/#about-us" className="text-[#8B0000] font-medium text-xl hover:text-red-600 transition duration-200">
                 About Us
+              </Link>
+              <Link to="/#products" className="text-[#8B0000] font-medium text-xl hover:text-red-600 transition duration-200"> {/* New Products Link */}
+                Our Products
               </Link>
               <Link to="/#contact" className="text-[#8B0000] font-medium text-xl hover:text-red-600 transition duration-200">
                 Contact Us

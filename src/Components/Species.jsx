@@ -27,7 +27,7 @@ const SpeciesShowcase = () => {
   }, []);
 
   return (
-    <div className="p-10 md:p-20 bg-light-gray">
+    <div id='products' className="p-10 md:p-20 bg-light-gray">
       <h2 className="text-4xl font-bold text-center mb-6 text-dark-green">
       Explore Our Selection of LUS Wood 
       </h2>
