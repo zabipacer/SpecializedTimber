@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { db } from './firebase/firebase.config'; // Adjust import based on your structure
 import { get, ref } from 'firebase/database';
 import { FaCogs, FaHammer, FaInfoCircle, FaShieldAlt, FaTree } from 'react-icons/fa';
+import ProductPhotos from './ProductPhotos';
 
 const SpeciesDetail = () => {
   const { id } = useParams(); // Get species ID from the URL
@@ -41,7 +42,7 @@ const SpeciesDetail = () => {
             {species.name ? species.name : 'No name found'}
           </h1>
           <h2 className="text-lg md:text-2xl text-white">
-            {species.color} - {species.mor}
+            {species.description} 
           </h2>
         </div>
       </section>
@@ -100,8 +101,24 @@ const SpeciesDetail = () => {
                 <p className="text-base md:text-lg text-gray-600">{species.grain}</p>
               </div>
             </div>
+        <div>
+        <div className="p-4 md:p-6 bg-gray-100 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300 flex items-center">
+        <FaCogs className="text-blue-500 mr-3 text-3xl" />
+     <div> <h3 className="text-xl font-semibold text-gray-700">Durability</h3>
+     <p className="text-lg text-gray-600">{species.Durability}</p></div>
+       
+      </div>
+        </div>
+      <div className="p-4 md:p-6 bg-gray-100 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300 flex items-center">
+      <FaCogs className="text-blue-500 mr-3 text-3xl" />
+      <div>
+        <h3 className="text-xl font-semibold text-gray-700">Texture</h3>
+        <p className="text-lg text-gray-600">{species.workability}</p>
+      </div>
             {/* Add similar blocks for other properties */}
           </div>
+    </div>
+    
         </div>
       </section>
 
@@ -113,10 +130,17 @@ const SpeciesDetail = () => {
             <div className="p-4 md:p-6 bg-white rounded-lg shadow-lg hover:bg-gray-100 transition duration-300 flex items-center">
               <FaInfoCircle className="text-purple-500 mr-3 text-2xl md:text-3xl" />
               <div>
-                <h3 className="text-lg md:text-xl font-semibold text-gray-700">MOR</h3>
-                <p className="text-base md:text-lg text-gray-600">{species.MOR}</p>
+                <h3 className="text-lg md:text-xl font-semibold text-gray-700">Janka Hardness</h3>
+                <p className="text-base md:text-lg text-gray-600">{species.Janka}</p>
               </div>
             </div>
+            <div className="p-6 bg-white rounded-lg shadow-lg hover:bg-gray-100 transition duration-300 flex items-center">
+      <FaInfoCircle className="text-purple-500 mr-3 text-3xl" />
+      <div>
+        <h3 className="text-xl font-semibold text-gray-700">Average Dried Weight(kg/m³)</h3>
+        <p className="text-lg text-gray-600">{species.Endgrain}</p>
+      </div>
+    </div>
             {/* Add more mechanical property blocks here */}
           </div>
         </div>
@@ -138,21 +162,7 @@ const SpeciesDetail = () => {
       </section>
 
       {/* Usage Images Section */}
-      <section className="bg-gray-200 py-8 md:py-10 px-4 md:px-16">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-700 mb-4">Usage Images</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-            {species.usageImages.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`Usage ${index + 1}`}
-                className="rounded-lg shadow-lg max-h-60 md:max-h-96 hover:scale-105 transition-transform duration-300"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+    <ProductPhotos species={species}/>
     </div>
   );
 };
