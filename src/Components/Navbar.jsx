@@ -10,19 +10,23 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Left: Logo */}
         <div className="flex items-center">
-          <Link to="/">
+          <Link to="/" onClick={closeMenu}>
             <img src={logo} alt="Company Logo" className="h-12 w-auto" />
           </Link>
 
           {/* Company Name and D-U-N-S Number */}
           <div className="ml-2">
-            <span className="text-xl font-semibold text-[#8B0000] block">SPECIALIZED TIMBER PRODUCTS LTD. (Est. 1986)</span>
-            <span className="text-sm font-semibold text-[#8B0000] block">D-U-N-S: 64-464-8230</span>
+            <span className="text-sm md:text-xl font-semibold text-[#8B0000] block">SPECIALIZED TIMBER PRODUCTS LTD. (Est. 1986)</span>
+            <span className="text-xs md:text-sm font-semibold text-[#8B0000] block">D-U-N-S: 64-464-8230</span>
           </div>
         </div>
 
@@ -35,19 +39,19 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className={`flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-lg md:flex ${isOpen ? 'flex' : 'hidden'} md:block`}>
-          <Link to="/#why-choose-us" className="text-[#8B0000] font-medium hover:text-red-600 transition duration-200">
+          <Link to="/#why-choose-us" className="text-[#8B0000] font-medium hover:text-red-600 transition duration-200" onClick={closeMenu}>
             Why Choose Us
           </Link>
-          <Link to="/#process" className="text-[#8B0000] font-medium hover:text-red-600 transition duration-200">
+          <Link to="/#process" className="text-[#8B0000] font-medium hover:text-red-600 transition duration-200" onClick={closeMenu}>
             Our Process
           </Link>
-          <Link to="/#about-us" className="text-[#8B0000] font-medium hover:text-red-600 transition duration-200">
+          <Link to="/#about-us" className="text-[#8B0000] font-medium hover:text-red-600 transition duration-200" onClick={closeMenu}>
             About Us
           </Link>
-          <Link to="/#products" className="text-[#8B0000] font-medium hover:text-red-600 transition duration-200"> {/* New Products Link */}
+          <Link to="/#products" className="text-[#8B0000] font-medium hover:text-red-600 transition duration-200" onClick={closeMenu}>
             Our Products
           </Link>
-          <Link to="/#contact" className="text-[#8B0000] font-medium hover:text-red-600 transition duration-200">
+          <Link to="/#contact" className="text-[#8B0000] font-medium hover:text-red-600 transition duration-200" onClick={closeMenu}>
             Contact Us
           </Link>
         </div>
@@ -60,19 +64,19 @@ const Navbar = () => {
               <FaTimes size={28} />
             </button>
             <div className="flex flex-col space-y-8 text-center">
-              <Link to="/#why-choose-us" className="text-[#8B0000] font-medium text-xl hover:text-red-600 transition duration-200">
+              <Link to="/#why-choose-us" className="text-[#8B0000] font-medium text-xl hover:text-red-600 transition duration-200" onClick={closeMenu}>
                 Why Choose Us
               </Link>
-              <Link to="/#process" className="text-[#8B0000] font-medium text-xl hover:text-red-600 transition duration-200">
+              <Link to="/#process" className="text-[#8B0000] font-medium text-xl hover:text-red-600 transition duration-200" onClick={closeMenu}>
                 Our Process
               </Link>
-              <Link to="/#about-us" className="text-[#8B0000] font-medium text-xl hover:text-red-600 transition duration-200">
+              <Link to="/#about-us" className="text-[#8B0000] font-medium text-xl hover:text-red-600 transition duration-200" onClick={closeMenu}>
                 About Us
               </Link>
-              <Link to="/#products" className="text-[#8B0000] font-medium text-xl hover:text-red-600 transition duration-200"> {/* New Products Link */}
+              <Link to="/#products" className="text-[#8B0000] font-medium text-xl hover:text-red-600 transition duration-200" onClick={closeMenu}>
                 Our Products
               </Link>
-              <Link to="/#contact" className="text-[#8B0000] font-medium text-xl hover:text-red-600 transition duration-200">
+              <Link to="/#contact" className="text-[#8B0000] font-medium text-xl hover:text-red-600 transition duration-200" onClick={closeMenu}>
                 Contact Us
               </Link>
             </div>
