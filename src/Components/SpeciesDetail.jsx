@@ -35,7 +35,7 @@ const SpeciesDetail = () => {
       {/* Hero Section */}
       <section
         className="relative h-60 md:h-96 bg-cover bg-center"
-        style={{ backgroundImage: `url(/public/DetailHero.jpg)` }}
+        style={{ backgroundImage: `url(/DetailHero.jpg)` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-2">

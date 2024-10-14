@@ -50,7 +50,7 @@ const SpeciesShowcase = () => {
               </Link>
               <div className="p-4">
                 <h3 className="text-lg font-bold text-dark-green">{species.name}</h3>
-                <p className="text-sm text-gray-700">{species.color}</p>
+                <p className="text-sm text-gray-700">{species.descryption}</p>
               </div>
             </div>
           ))
