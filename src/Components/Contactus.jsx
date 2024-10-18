@@ -38,24 +38,28 @@ const ContactUs = () => {
         <div className="grid grid-cols-1 gap-6">
           <input
             type="text"
+            name="name"
             placeholder="Your Name"
             className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
             required
           />
           <input
             type="email"
+            name="email"
             placeholder="Your Email"
             className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
             required
           />
           <input
             type="text"
+            name='subject'
             placeholder="Subject"
             className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
             required
           />
           <textarea
             placeholder="Your Message"
+            name='message'
             className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 h-32"
             required
           />
