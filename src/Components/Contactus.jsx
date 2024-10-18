@@ -31,7 +31,7 @@ const ContactUs = () => {
     <div>
       <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">Get in Touch</h2>
       <form
-        action="https://formsubmit.co/info@specializedtimber.com"
+        action="https://formspree.io/f/xeoqqwww"
         method="POST"
         className="bg-white shadow-lg rounded-lg p-8"
       >
